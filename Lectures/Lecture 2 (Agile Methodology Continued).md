@@ -1,0 +1,74 @@
+Cost of Change grows exponentially with time
+- aims to to flatten the cost
+
+Agile Methods
+- focus on upfront code rather than waiting for documentation
+- People over Process
+- Iterative Approach deliver working SW quickly, evolve it quickly
+- Customer involvement
+- Expectations that requirements will change
+- Simplicity- not inadequacy
+
+Agile now considered a classification
+- several discrete methodologies conform to the values and principles of Agile
+
+Agile Specific Methods
+- XP
+	- one of the popular Agile approaches to Software Development
+	- XP is a lightweight methodology for small to medium sized teams developing software in the face of vague or rapidly changing requirements
+	- lightweight
+	- Humanistic
+	- Discipline
+	- Always changing constantly
+	- Values and Principles(Incremental Planning)
+		- Communication(small teams)
+		- Simplicity
+			- no duplicate functionality
+			- Fewest possible classes and methods(less coupling)
+			- Refactoring
+				- modular methods: each class responsible for one thing
+		- Feedback(quick feedbacks with small releases)
+			- sense of victory over quick feedbacks
+		- Courage
+	- Test-First Development
+		- any program that doesn't have automatic test doesn't exist
+		- Develop unit tests for each piece of functionality before implementing the functionality
+		- Immediate feedback on implementation
+	- Pair Programming
+		- All production code with 2 people on 1 computer
+		- Different roles - Programming -> strategizing
+		- Studies suggest development productivity with pair programming is similar to that of 2 people working independently
+	- Continuous Integration
+		- Integrate and test every few hours or everyday
+		- No Integration nightmare
+	- On-site Customer
+		- actual member of the team
+			- sits with the team
+			- brings requirements
+		- System should be worth involving 1 customer at all times
+	- Testing Strategies
+		- 1) Unit Tests
+			- test every meaningful feature
+			- Special cases
+			- may include refactoring
+		- 2) System tests
+			- test to see if everything works overall
+- Scrum
+	- Scrum Actors
+		- Product Owner/Customer
+			- expresses backlog items and order them by value
+		- Team
+			- responsible for deliverability
+		- Scrum Master
+			- manager of the team and check on team updates
+	- High Level Process
+		- Living list of requirements -> Backlog items to be completed next sprint -> 
+		- Daily Scrum
+			- when: daily
+			- What: each team member answers 3 questions
+			- Who: dev team, scrum master
+			- How long: 15 minutes
+		- doesn't dictate which SE practices developers should use
+		- Iteration Span: scrum lasts about 3 weeks
+		- Changes in iteration plan: cannot be changed after it was accepted
+- This course uses a hybrid between Scrum and XP
