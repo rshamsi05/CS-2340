@@ -1,0 +1,96 @@
+Steps of Design Phase
+	- 1) Requirements
+	- 2) Design
+	- 3) Implementation
+	- 4) Maintenance
+	- 5) Verification & Validation
+
+Software Architecture
+- organization of a system
+- Set of design decisions you must make early on
+	- hard to change
+- decisions that you wish you could get early on
+- Architecture vs Design
+	- Design
+		- module decision
+		- easy to change
+		- Scope-module
+	- Architecture
+		- System Decisions
+		- Hard to Change
+		- Scope-system
+
+Importance of software Architecture
+- good software architecture represents high internal quality of software, one that is not necessarily visible to customers
+
+Common Architectural Styles
+- Client Servers
+	- Client-server
+	- organized as set of services and associated servers, and clients that access and use the servers
+	- Major components
+		- print servers, file servers, email servers
+		- Set of clients that call on the services offered
+		- Network that allows the clients to access these services
+	- Pros
+		- it is centralized system that keeps all the data and its controls in one place
+		- bring high level of scalability 
+	- Cons
+		- each service is a single point of failure so susceptible to denial of service attacks of server failures
+	- Tier vs Layer
+		- tier: physical separation
+		- layer: logical separation
+- N-tier
+	- application processing, and database management in stored onto 2 or more processors
+	- split into as many tiers as possible
+		- client -> web app/processing -> database
+			- above is example of 3 tier architecture
+- Peer to Peer Architecture
+	- systems are decentralized systems in which computations can be carried out by any node on the network
+	- No clear distinction between clients and servers
+		- Examples: Skype and BitTorrent
+	- Appropriate in 2 circumstances
+		- 1) computationally intensive and independent
+		- 2) when system involves exchange of information between individual computers
+	- Pros
+		- highly redundant and hence both fault-tolerant and tolerant of nodes disconnecting from network
+	- Cons
+		- concerns about issues of security and trust, peers may behave in a malicious way.
+- Blackboard/Shared Memory Architecture
+	- data lies onto a single blackboard and divided into sub-components
+	- Components
+		- Knowledge sources: specialized modules with their own representation, for reading and writing
+		- Control component: selects, configures and executes modules
+		- Blackboard: structural global memory containing objects from the solution source
+- Piper & Filter Architecture
+	- Data centric style of architecture
+	- data flows through the application
+	- Advantages
+		- easy to understand and supports transformation reuse
+		- cam be implemented as either a sequential or concurrent system
+		- Workflow style matches structure of many business processes
+	- Disadvantages
+		- format for data transfer has to be agreed upon between communicating transformations
+		- system overhead increase due to multiple parsing and unparsing data with complex I/O formats
+- Layered Architecture
+	- application server contains the presentation layer, the application layer, and the domain layer
+	- Database server is used for data storage
+	- Pros
+		- only need to understand the layers beneath the one we are on
+		- higher level layers
+	- Cons
+		- layers cannot encapsulate
+		- Coupling of code overtime
+- Model-View Controller Pattern
+	- follows layered approach
+	- Model component: manages system data
+	- View component: defines data is presented to the user
+	- Controller component: manages UI(key presses and mouse clicks)
+- MVVM(Model-View-VewModel) architecture
+	- business logic is decoupled from UI 
+	- make it particularly useful for developing applications
+	- one of the recommended architecture patterns for developing android applications
+- Implicit Invocation/Event-Driven Architecture
+	- consumers listen to the events produced by others 
+	- should be used when multiple subsystems must process the same events and real time processing 
+- Microservices
+	- Example: amazon web services
