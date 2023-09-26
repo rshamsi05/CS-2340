@@ -1,0 +1,48 @@
+- System Sequence Diagram
+	- Interaction diagram that models how actors and the system collaborate
+	- Typically capture the behavior of a single use case
+	- System viewed as black box
+		- internal objects not shown
+	- Emphasis on events that cross boundary from actors to systems
+	- Why is it important?
+		- design the software to handle the external input events
+	- How to draw
+		- Describe only one scenario from use case diagram
+			- one use case per SSD
+		- Think of the order of interactions of actor with system
+		- Each interaction can be considered an event and shown as messages
+		- Name events based on intentions, not on software implementation
+			- authenticate vs enterPassword
+			- selectItem vs clickItemInDropDownList
+		- Start system message names with verbs
+	- See slides for more complex example of the graph
+	- Fragments
+		- Loop
+			- fragments used to represent repetitive sequence
+			- condition is shown in brackets
+			- an alternative version is to specify a guard or Boolean condition
+		- Alternatives
+			- combination fragment is used when a choice needs to be made between two or more message sequences.
+			- Models "if then" logic
+		- Option
+		- References
+			- manage the size of large sequence diagrams
+- SD(Sequence Diagram)
+	- models single scenario in the executing system
+	- Only difference is that SD does not treat system as a black box
+	- Activation bar
+		- box placed on the lifeline to indicate that an object is active during an interaction
+		- Length of the rectangle indicates the duration of the objects staying active for an action
+	- Messages between objects
+		- write message name and arguments above arrow
+	- Synchronous Message
+		- used when the sender waits for the receiver to process the message and return before carrying on with another
+	- Asynchronous Message
+		- when the message caller does not wait for the receiver to process the message and return before sending other messages to other objects within the system
+	- Lifetime of Objects
+		- creation: arrow with new written above it
+		- deletion: an X at bottom of object's lifeline
+			- Java doesn't explicitly delete objects; they fall out of scope and are garbage-collected.
+		- fragments
+			- same as SSD
+	- 
